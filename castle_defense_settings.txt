@@ -1,0 +1,73 @@
+/// Castle Defense Settings ///
+
+# These are settings that affect the difficulty and gameplay in Castle Defense.
+# All modifiers are linear: smaller modifiers mean lower stats, easier enemies or worse towers.
+
+# Difficulty affects enemies' spawnrate and their increasing health buff.
+# Set difficulty > 150 for extreme difficulty: only Large Enemy units spawn.
+# Splash modifier affects splash effectiveness, the bigger the modifier the more the affected enemies slow down.
+# Enemy range is how near the enemy has to be for the castle to start losing HP.
+# Enemy speed modifier shouldn't be more than 25 with current update frequency (100ms) due to pathfinding.
+# Tower spots and Enemy route chunks set coordinates for Tower spots and Enemy route.
+# Enemy route points should be set in order.
+# Tower spots can be in any order, but for player's convenience spots should be in order.
+
+# All settings files should follow this template format due to file reader's limitations.
+# This means don't add comments between the header and the value or between _begin and _end lines.
+# Tower spots and Enemy route chunks should both have at least one coordinate.
+
+initial_money
+1000
+difficulty
+10
+
+small_tower_price
+100
+medium_tower_price
+300
+large_tower_price
+600
+splash_tower_price
+1000
+tower_range
+150
+splash_radius
+50
+splash_modifier
+10
+enemy_range
+100
+enemy_speed_modifier
+10
+enemy_damage_modifier
+10
+enemy_hp_modifier
+10
+
+
+castle_coordinates
+55,300
+
+enemy_route_begin
+800,300
+700,350
+600,360
+500,310
+400,250
+300,200
+200,240
+100,300
+enemy_route_end
+
+tower_spots_begin
+150,180
+150,300
+300,250
+400,200
+500,360
+600,300
+650,310
+700,300
+tower_spots_end
+
+end_of_file
